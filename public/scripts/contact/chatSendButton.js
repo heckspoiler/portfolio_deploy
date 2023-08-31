@@ -14,7 +14,9 @@ chatInput.addEventListener("keydown", function (event) {
 // sending user input to the chatbot and fetching answer
 
 const askQuestion = (question) => {
-  fetch(`https://carlothedom.digital/api/ask?q=${question}`)
+  fetch(`https://carlothedom.digital/api/ask?q=${question}`, {
+    mode: "cors", // Add this line
+  })
     .then((response) => response.json())
     .then((data) => {
       console.log(data);

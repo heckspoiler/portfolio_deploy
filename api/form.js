@@ -15,6 +15,8 @@ module.exports = async (req, res) => {
   const allowedOrigins = [
     "https://www.carlothedom.digital",
     "https://carlothedom.digital",
+    "http://carlothedom.digital",
+    "http://www.carlothedom.digital",
   ];
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {

@@ -26,6 +26,7 @@ form.addEventListener("submit", (event) => {
     headers: {
       "Content-Type": "application/json",
     },
+    mode: "cors",
     body: JSON.stringify(formObject),
   })
     .then((response) => response.json())
@@ -54,7 +55,6 @@ formSendButton.addEventListener("click", () => {
 
   setTimeout(() => {
     buttonForm.innerHTML = "DROP ME A LINE!";
-    buttonForm.innerHTML = "sent!";
     formName.value = "";
     formEmail.value = "";
     formMessage.value = "";
