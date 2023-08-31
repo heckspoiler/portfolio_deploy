@@ -47,18 +47,18 @@ formSendButton.addEventListener("click", () => {
   formEmail.innerHTML = "";
   // formSelect.innerHTML = "";
   formMessage.innerHTML = "";
-  setTimeout(() => {
-    buttonForm.innerHTML = "sent!";
-    formName.value = "";
-    formEmail.value = "";
-    formMessage.value = "";
-    formCheckbox.checked = false;
-  }, timeout);
+  setTimeout(() => {}, timeout);
   setTimeout(() => {
     buttonForm.innerHTML = "thanks for reaching out!";
   }, timeout * 2);
 
   setTimeout(() => {
     buttonForm.innerHTML = "DROP ME A LINE!";
+    buttonForm.innerHTML = "sent!";
+    formName.value = "";
+    formEmail.value = "";
+    formMessage.value = "";
+    formCheckbox.checked = false;
+    formSelect.value = "select";
   }, timeout * 4);
 });
