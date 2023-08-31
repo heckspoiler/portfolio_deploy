@@ -1,7 +1,6 @@
 #ignore environment variable
 
 .env
-prompt.js
 .DS_Store
 Thumbs.db
 node_modules
