@@ -72,8 +72,8 @@ module.exports = async (req, res) => {
       }
 
       .img {
-        height: 40px;
-        width: 40px;
+        height: 40px !important;
+        width: 40px !important;
         
       }
     </style>
@@ -85,7 +85,7 @@ module.exports = async (req, res) => {
 
     <br />
 
-    <img src="https://i.ibb.co/yBT69K7/carlo-1.png" alt="carlo-1" border="0">
+    <img src="https://i.ibb.co/yBT69K7/carlo-1.png" alt="carlo-1">
     
 
 
