@@ -14,9 +14,7 @@ chatInput.addEventListener("keydown", function (event) {
 // sending user input to the chatbot and fetching answer
 
 const askQuestion = (question) => {
-  fetch(
-    `portfolio-deploy-gatbft6h6-heckspoiler.vercel.app/api/form?q=${question}`
-  )
+  fetch(`https://portfolio-deploy-bay.vercel.app/api/form?q=${question}`)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);

@@ -21,7 +21,7 @@ form.addEventListener("submit", (event) => {
     checkbox: formCheckbox.checked,
   };
 
-  fetch(`https://portfolio-deploy-gatbft6h6-heckspoiler.vercel.app/api/form`, {
+  fetch(`https://portfolio-deploy-bay.vercel.app/api/form`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
