@@ -1,0 +1,82 @@
+@media screen and (max-width: 767px) {
+      .phone-overlay {
+
+            display: flex;
+            z-index: 120;
+            max-width: 767px !important;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background: rgb(164, 255, 222);
+            overflow-x: hidden;
+            transition: background-color 0.4s ease-in-out;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            height: auto;
+            min-height: 100rem;
+
+      }
+
+      body {
+            overflow-x: hidden;
+            background: transparent;
+      }
+
+
+
+      .cursor,
+      .list-object {
+
+            display: none;
+      }
+
+      .overlay-title {
+            font-family: "Nohemi Medium";
+            height: 100%;
+            font-size: clamp(20px, calc(1rem + 6vw), 60px);
+            width: 100%;
+            line-height: 1.5;
+            max-width: 767px !important;
+            padding: 90px;
+            transition: color 0.3s ease-in, opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+            color: #711EF8;
+            margin-bottom: 250px;
+            opacity: 0;
+            transition-delay: 0s, 0.8s, 0s;
+      }
+
+      .letter {
+            opacity: 0;
+            margin-top: 30px;
+            transition: opacity 0.1s ease-in-out, margin-top 0.3s ease-in-out scale 0.3s ease-in-out !important;
+      }
+
+      .eyes {
+            display: none;
+      }
+
+
+
+      #fullPage {
+            display: none;
+      }
+
+      .landing-section {
+            display: none;
+      }
+
+      .eyes {
+
+            z-index: 140;
+            scale: 1.4;
+      }
+
+      .eyes-right {
+            margin-left: 30px;
+      }
+
+      .header {
+            display: none;
+      }
+
+}

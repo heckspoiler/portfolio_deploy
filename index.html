@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Carlo Ettisberger Portfolio">
+      <meta name="keywords" content="HTML, CSS, JavaScript, PHP, Portfolio, Carlo Ettisberger">
+      <meta name="author" content="Carlo Ettisberger">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <script src="./scripts/general/tilt.js" type="module"></script>
+      <script src="./prompt.js" type="module"></script>
+      <script src="./scripts/landing/textWaterfall.js" type="module"></script>
+      <script src="./scripts/landing/landing.js" type="module"></script>
+      <script src="./scripts/general/cursor.js" type="module"></script>
+      <script src="./scripts/general/eyes.js" type="module"></script>
+      <script src="./scripts/general/sidebarScroll.js" type="module"></script>
+      <script src="./scripts/general/backgroundColor.js" type="module"></script>
+      <script src="./scripts/about/about.js" type="module"></script>
+      <script src="./scripts/projects/projectsLoadingAnimations.js" type="module"></script>
+      <scritp src="scripts/projects/projectsArray.js" type="module"></scritp>
+      <script src="./scripts/projects/projectsLinkState.js" type="module"></script>
+      <script src="./scripts/projects/imageChange.js" type="module"></script>
+      <script src="./scripts/projects/projectDescription.js" type="module"></script>
+      <script src="./scripts/projects/arrowContainer.js" type="module"></script>
+      <script src="./scripts/skills/skillsLoadingAnimation.js" type="module"></script>
+      <script src="./scripts/skills/cubePositioning.js" type="module"></script>
+      <script src="./scripts/skills/actionTextField.js" type="module"></script>
+      <script src="./scripts/contact/contactWaterfall.js" type="module"></script>
+      <script src="./scripts/contact/chatResponse.js" type="module"></script>
+      <script src="./scripts/contact/mainButtons.js" type="module"></script>
+      <script src="./scripts/contact/chatSendButton.js" type="module"></script>
+      <script src="./scripts/contact/formSendButton.js" type="module"></script>
+      <script src="./scripts/contact/chatResponse.js" type="module"></script>
+      <script src="./scripts/contact/textfieldCount.js" type="module"></script>
+      <script src="./scripts/overlay/overlay.js" type="module"></script>
+
+
+
+      <script src="script.js" type="module"></script>
+      <link rel="stylesheet" href="style-main.css">
+      <link rel="stylesheet" href="./media-queries/media-queries-larger.css">
+      <link rel="stylesheet" href="./media-queries/media-queries-1024px.css">
+      <link rel="stylesheet" href="./media-queries/media-queries-992px.css">
+      <link rel="stylesheet" href="./media-queries/media-queries-820px.css">
+      <link rel="stylesheet" href="./media-queries/media-queries-768px.css">
+      <link rel="stylesheet" href="./media-queries/media-queries-mobile.css">
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="https://use.typekit.net/jdz3eoh.css">
+
+      <title> Carlo Ettisberger - Web Developer</title>
+</head>
+
+<body>
+
+      <section class="phone-overlay">
+            <h1 class="overlay-title">Hello and thanks for visiting my portfolio! It seems you're on a mobile device. My
+                  portfolio is best viewed on larger screens. Some features might not display perfectly on mobile. I
+                  know it's common to have mobile-friendly sites these days, but some content here is optimized for
+                  bigger displays. I'd recommend using a computer or tablet for the best experience. Sorry for any
+                  inconvenience, and I appreciate your understanding! </h1>
+      </section>
+      <div class="cursor"></div>
+
+      <!--remove this section probably-->
+      <section class="landing-section main-section section" id="landing">
+            <section class="landing-sections">
+                  <div class="click-me-h2" data-tilt>
+                        <h2>show me something!</h2>
+                  </div>
+                  <div class="magnet-block"></div>
+                  <h3 class="landing-section__animation-text-one" data-tilt>welcome to my portfolio!</h3>
+                  <button class="landing-button" data-tilt><span class="inner">SHOW ME <br /> MORE!</span></button>
+            </section>
+
+      </section>
+
+
+      <section class="eyes-container">
+            <div class="eyes-relative">
+                  <div class="eyes eyes-left">
+                        <div class="iris iris-left">
+                              <div></div>
+                        </div>
+                  </div>
+                  <div class="eyes eyes-right">
+                        <div class="iris iris-right">
+                              <div></div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+      <header class="navbar">
+            <p id="current-section"></p>
+            <ul class="list-ul">
+                  <a href="#about">
+                        <li class="list-object"></li>
+                  </a>
+                  <a href="#projects">
+                        <li class="list-object"></li>
+                  </a>
+                  <a href="#skills">
+                        <li class="list-object"></li>
+                  </a>
+                  <a href="#contact">
+                        <li class="list-object"></li>
+                  </a>
+
+            </ul>
+
+      </header>
+      <div id="fullPage">
+            <section class="about-section main-section section" id="about">
+
+                  <div class="about-upper-content-container">
+
+                        <h2>Hi!</h2>
+                        <svg class="about-waves-upper" width="324" height="80" viewBox="0 0 324 80" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3 8.28571C11.8095 1.23809 20.619 1.23809 29.4286 8.28571C38.2381 15.3333 47.0476 15.3333 55.8571 8.28571C64.6667 1.23809 73.4762 1.23809 82.2857 8.28571C91.0952 15.3333 99.9048 15.3333 108.714 8.28571C117.524 1.23809 126.333 1.23809 135.143 8.28571C143.952 15.3333 152.762 15.3333 161.571 8.28571"
+                                    stroke="#010101" stroke-width="5" stroke-linecap="round" />
+                              <path d="M3 40C11.8095 32.9524 20.619 32.9524 29.4286 40C38.2381 47.0476 47.0476 47.0476 55.8571 40C64.6667 32.9524 73.4762 32.9524 82.2857 40C91.0952 47.0476 99.9048 47.0476 108.714 40C117.524 32.9524 126.333 32.9524 135.143 40C143.952 47.0476 152.762 47.0476 161.571 40"
+                                    stroke="#010101" stroke-width="5" stroke-linecap="round" />
+                              <path d="M3 71.7143C11.8095 64.6667 20.619 64.6667 29.4286 71.7143C38.2381 78.7619 47.0476 78.7619 55.8571 71.7143C64.6667 64.6667 73.4762 64.6667 82.2857 71.7143C91.0952 78.7619 99.9048 78.7619 108.714 71.7143C117.524 64.6667 126.333 64.6667 135.143 71.7143C143.952 78.7619 152.762 78.7619 161.571 71.7143"
+                                    stroke="#010101" stroke-width="5" stroke-linecap="round" />
+                              <path d="M162 8.28571C170.81 1.23809 179.619 1.23809 188.429 8.28571C197.238 15.3333 206.048 15.3333 214.857 8.28571C223.667 1.23809 232.476 1.23809 241.286 8.28571C250.095 15.3333 258.905 15.3333 267.714 8.28571C276.524 1.23809 285.333 1.23809 294.143 8.28571C302.952 15.3333 311.762 15.3333 320.571 8.28571"
+                                    stroke="#010101" stroke-width="5" stroke-linecap="round" />
+                              <path d="M162 40C170.81 32.9524 179.619 32.9524 188.429 40C197.238 47.0476 206.048 47.0476 214.857 40C223.667 32.9524 232.476 32.9524 241.286 40C250.095 47.0476 258.905 47.0476 267.714 40C276.524 32.9524 285.333 32.9524 294.143 40C302.952 47.0476 311.762 47.0476 320.571 40"
+                                    stroke="#010101" stroke-width="5" stroke-linecap="round" />
+                              <path d="M162 71.7143C170.81 64.6667 179.619 64.6667 188.429 71.7143C197.238 78.7619 206.048 78.7619 214.857 71.7143C223.667 64.6667 232.476 64.6667 241.286 71.7143C250.095 78.7619 258.905 78.7619 267.714 71.7143C276.524 64.6667 285.333 64.6667 294.143 71.7143C302.952 78.7619 311.762 78.7619 320.571 71.7143"
+                                    stroke="#010101" stroke-width="5" stroke-linecap="round" />
+                        </svg>
+                  </div>
+                  <div class="about-mid-content-container about-containers">
+                        <h2 class="about-h2-outlines">I'm</h2>
+                        <div class="about-h2-carlo-container" data-tilt>
+                              <h2 class="about-h2-black">Carlo</h2>
+                              <h2 class="about-h2-green">Carlo</h2>
+                        </div>
+
+                  </div>
+                  <div class="below-block"></div>
+                  <svg class="arrow-about" width="100" height="173" viewBox="0 0 100 173" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42.4623 0.691579C41.7397 -0.143821 40.4767 -0.235246 39.6413 0.487375C38.8059 1.21 38.7145 2.47302 39.4371 3.30842L42.4623 0.691579ZM0.979006 171.5L24.0355 172.815L13.6462 152.19L0.979006 171.5ZM39.4371 3.30842C60.0052 27.0866 74.9335 45.7775 84.2513 61.2396C93.5825 76.7241 97.0853 88.6472 95.3167 98.9905C93.5534 109.303 86.4561 118.575 73.2673 128.537C60.0815 138.496 41.1214 148.914 16.1626 161.612L17.9764 165.177C42.9154 152.489 62.1741 141.928 75.6781 131.729C89.179 121.531 97.2421 111.464 99.2595 99.6647C101.272 87.8964 97.1753 74.9363 87.6773 59.175C78.1658 43.3915 63.0345 24.4744 42.4623 0.691579L39.4371 3.30842Z"
+                              fill="black" />
+                  </svg>
+
+                  <h3 class="about-description">A self taught <span class="description-outlines">junior web
+                              developer</span> <br> based in
+                        Switzerland</h3>
+                  <img class="hover-svg-laptop" src="./assets/svgs/about/laptop.svg" alt="Image for Laptop Popup" />
+                  <div class="about__design-container">
+
+                        <svg class="about-wavy-line" width="171" height="191" viewBox="0 0 171 191" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_9_525)">
+                                    <path d="M2.38991 17.69C9.47991 12.93 16.6399 7.65 24.8299 4.92C26.8099 4.26 30.1699 3.11 32.0399 4.59C33.3399 5.61 32.7699 7.14 32.1999 8.44C31.2699 10.56 29.4899 12.33 28.0299 14.09C24.7299 18.06 21.0099 21.67 17.8199 25.73C16.3099 27.66 14.8899 29.67 13.5599 31.73C12.2299 33.79 11.6499 35.92 11.9399 38.27C12.0199 38.93 12.0999 39.12 12.6899 39.42C13.1599 39.65 13.6999 39.95 14.1999 40.11C15.2999 40.47 16.9299 39.81 18.0199 39.5C20.4199 38.81 22.5599 37.65 24.7999 36.57C29.6299 34.25 34.2999 31.62 38.9999 29.06C44.3099 26.17 49.6799 23.39 55.1799 20.87C57.7699 19.68 60.4099 18.41 63.0799 17.42C64.3999 16.93 65.7499 16.6 67.1399 16.38C68.5299 16.16 69.0799 15.7 70.0899 16.86L69.8899 16.17L69.4599 18.4L70.1099 16.94C67.2099 20.92 63.4199 24.03 59.7899 27.32C55.8499 30.9 51.8699 34.43 47.9899 38.08C44.1099 41.73 40.4199 45.48 36.7599 49.31C33.0999 53.14 29.5499 56.9 26.3199 60.97C24.6099 63.13 23.1899 65.46 21.8999 67.89C20.6099 70.32 19.4099 72.66 19.0499 75.55C19.0199 75.81 19.0799 76.04 19.2499 76.24C20.0499 76.71 21.1799 77.69 22.1099 77.72C22.7499 77.73 23.5899 77.35 24.1999 77.19L26.2999 76.64C27.5399 76.31 28.8199 76.06 30.0399 75.65C31.4099 75.19 32.7499 74.58 34.0999 74.06C39.2799 72.02 44.4299 69.92 49.5599 67.77C59.6499 63.55 69.6999 59.04 80.0999 55.62C82.8999 54.7 85.5099 53.58 88.4899 53.34C89.2599 53.28 89.8599 53.24 90.5799 52.96C91.0199 52.79 91.5099 52.66 91.9799 52.71C93.0699 52.82 93.7999 53.67 94.3699 54.52L94.2599 53.38C93.6399 55.08 92.7199 56.64 91.3299 57.83C90.5499 58.5 89.6499 58.94 88.8199 59.53C87.6799 60.33 86.5899 61.25 85.4899 62.1C80.9799 65.58 76.4899 69.08 72.0099 72.6C63.3099 79.42 54.7599 86.36 46.7499 93.98C44.7999 95.83 42.6699 97.44 40.9699 99.56C39.2699 101.68 38.0799 104.02 37.2899 106.55C37.1699 106.93 37.0799 107.8 37.6999 107.86C38.9499 107.99 40.4399 108.39 41.6799 108.2C43.0399 107.99 44.4999 107.23 45.7999 106.77C48.4499 105.83 50.9899 104.75 53.5499 103.59C58.7399 101.22 63.8699 98.74 68.9999 96.23C78.9299 91.37 88.7999 86.34 99.1599 82.42C101.91 81.38 104.63 80.24 107.47 79.46C108.21 79.26 108.95 79.07 109.7 78.91C110.54 78.72 111.12 78.38 111.89 78.02C113.11 77.45 114.28 77.95 115.25 78.76L116.13 76.11C114.03 78.09 112.01 80.15 109.69 81.87L102.48 87.23C97.7699 90.73 93.0199 94.19 88.3199 97.71C79.0399 104.66 69.8199 111.78 61.2399 119.58C58.8899 121.71 56.6599 123.94 54.4399 126.21C52.2199 128.48 50.2399 130.49 48.7699 133.28L50.0399 131.83C48.7699 132.91 47.5099 134.16 47.1199 135.85C46.8399 137.03 47.2399 138.74 48.3699 139.43C49.3399 140.02 51.4099 139.31 52.4899 139.1C54.0499 138.79 55.5999 138.4 57.1099 137.92C60.0299 136.98 62.8699 135.7 65.5199 134.15C68.4899 132.41 71.6299 130.98 74.7199 129.46C87.0099 123.44 99.3499 117.49 112.28 112.93C119.33 110.44 126.45 107.65 134.02 107.7L133.16 107.2C133.4 107.72 133.66 108.31 133.69 108.89C133.69 109.09 133.67 109.29 133.63 109.48C133.61 109.56 133.68 109.54 133.58 109.58C133.74 109.52 133.85 109.44 133.45 109.65C133.11 109.82 132.79 110.02 132.44 110.18C131.31 110.68 130.4 111.02 129.41 111.8C125.74 114.69 122.02 117.52 118.26 120.3C111.04 125.63 103.71 130.64 97.1999 136.85C94.3499 139.56 91.0799 142.05 89.8399 145.95C89.4199 147.26 88.6699 149.97 89.8099 151.02C91.0399 152.16 92.7199 152.76 94.3799 152.8C96.4299 152.85 98.2999 151.88 100.21 151.28C102.48 150.57 104.73 149.84 106.99 149.09C111.49 147.6 115.94 145.96 120.42 144.4C125.2 142.73 130.07 141.31 134.98 140.11C137.51 139.5 140.1 139.08 142.56 138.25C144.89 137.47 147.18 137.81 149.34 138.94L148.93 137.63C148.47 138.83 147.82 139.95 146.86 140.82C145.72 141.84 144.27 142.48 143.03 143.35C139.6 145.76 136.17 148.16 132.68 150.47C129.46 152.61 126.5 155.05 123.37 157.3C121.8 158.43 120.36 159.41 119.33 161.11C118.54 162.41 118.16 163.88 118.26 165.41C118.28 165.73 118.34 166.2 118.76 166.27C122.36 166.85 125.99 166.54 129.4 165.24C132.99 163.88 136.81 163 140.5 161.93C144.19 160.86 147.85 159.74 151.58 158.83C152.52 158.6 153.49 158.42 154.43 158.16C155.21 157.95 155.93 157.54 156.73 157.4C158.2 157.14 159.44 157.77 160.47 158.78L160.36 157.64C159.68 159.48 158.32 160.28 156.9 161.53C155.03 163.18 153.05 164.66 151.08 166.17C150.06 166.95 149.11 167.81 148.13 168.64C147.26 169.37 146.29 169.95 145.43 170.69C143.85 172.05 142.69 173.96 142.84 176.1C142.87 176.54 142.93 176.77 143.34 176.96C144.92 177.69 146.5 177.88 148.22 177.73C150.17 177.56 152.14 177.53 154.09 177.31C156.04 177.09 157.88 176.86 159.8 176.72C161.34 176.6 162.54 176.14 163.5 177.61L163.61 175.97C162.7 177.69 161.26 179.04 160.01 180.51C158.76 181.98 157.19 183.85 159.09 185.44C159.65 185.91 160.34 186.09 161.05 186.13C162.23 186.2 163.4 186.2 164.58 186.31C165.58 186.41 166.15 186.27 166.31 187.38C166.42 188.15 166.35 188.93 166.52 189.7C166.89 191.4 170.76 188.44 170.4 186.76C170.22 185.9 170.34 185.01 170.14 184.15C169.85 182.95 169.16 182.59 168.01 182.48C166.71 182.35 165.36 182.13 164.05 182.16C163.07 182.19 162.42 182.01 162.05 181.02L161.43 182.87C163.16 180.38 165.5 178.42 166.92 175.7C167.2 175.16 167.39 174.6 167.03 174.06C166.22 172.82 164.94 172.43 163.51 172.6C161.57 172.82 159.6 172.9 157.66 173.18C155.72 173.46 153.73 173.62 151.75 173.69C149.77 173.76 148.17 173.95 146.27 173.07L146.77 173.93C146.75 173.57 146.81 173.21 146.79 172.86C146.77 172.33 146.97 172.7 146.69 172.9C147.64 172.23 148.54 171.56 149.44 170.8C151.3 169.23 153.26 167.79 155.15 166.26C158.66 163.43 162.49 160.75 164.1 156.37C164.22 156.04 164.28 155.5 163.99 155.23C162.97 154.23 161.75 153.55 160.31 153.42C158.61 153.27 157.24 153.96 155.66 154.4C151.83 155.48 147.94 156.36 144.11 157.48C140.28 158.6 136.5 159.69 132.69 160.79C130.89 161.31 129.2 162.1 127.34 162.4C125.48 162.7 123.56 162.69 121.67 162.38L122.17 163.24C122.1 162.2 122.1 161.23 122.96 160.67C124.46 159.69 125.83 158.55 127.26 157.46C130.43 155.05 133.78 152.88 137.07 150.63C138.7 149.51 140.32 148.39 141.94 147.26C143.56 146.13 145.16 145.24 146.71 144.14C149.45 142.21 151.47 139.49 152.65 136.37C152.86 135.82 152.77 135.33 152.24 135.06C150.61 134.21 148.84 133.78 147 133.86C144.93 133.96 143.04 134.83 141.04 135.26C136.94 136.13 132.88 137.14 128.86 138.33C120.63 140.75 112.63 143.93 104.46 146.56C103.29 146.94 102.12 147.31 100.95 147.67C99.9699 147.97 99.0399 148.45 98.0399 148.69C96.1399 149.15 94.4299 148.48 93.0099 147.21L93.2099 147.9C93.1399 146.25 93.3299 144.54 94.2699 143.14C94.6599 142.57 95.1499 142.11 95.6799 141.67C96.6499 140.85 97.5199 139.96 98.4299 139.08C101.74 135.89 105.27 132.92 108.96 130.18C112.92 127.25 116.97 124.45 120.92 121.5C122.92 120.01 124.91 118.5 126.89 116.97C127.85 116.23 128.8 115.49 129.75 114.74C129.94 114.59 130.13 114.44 130.32 114.29C130.93 113.83 129.86 114.45 130.48 114.19C131.06 113.94 131.66 113.73 132.23 113.45C135.67 111.8 138.82 108.18 136.99 104.26C136.81 103.86 136.56 103.76 136.13 103.76C133.18 103.74 130.27 104.07 127.39 104.73C124.51 105.39 121.68 106.45 118.86 107.37C113.15 109.23 107.52 111.31 101.97 113.61C90.6299 118.3 79.5799 123.82 68.5999 129.3C65.8299 130.68 63.2399 132.36 60.3399 133.48C57.4399 134.6 54.3099 135.35 51.1599 135.72L51.8499 135.92C51.4399 135.5 50.9399 135.01 50.8899 134.38C50.8899 134.34 50.8499 134.15 50.7999 134.44C50.7699 134.62 51.1799 134.13 51.2499 134.06C52.2499 133.06 52.7899 131.59 53.6899 130.47C54.4299 129.56 55.3299 128.82 56.1599 128C57.2499 126.9 58.3099 125.78 59.4099 124.7C63.5699 120.65 68.0099 116.91 72.5099 113.24C81.9699 105.51 91.8299 98.32 101.64 91.06C104.37 89.04 107.1 87 109.83 84.97C112.71 82.83 115.25 80.36 117.86 77.9C118.32 77.46 119.52 75.9 118.74 75.25C116.86 73.67 114.7 73.52 112.49 74.55C111.87 74.84 111.86 74.94 111.35 75.08C110.69 75.27 110 75.38 109.33 75.55C108.07 75.88 106.82 76.26 105.59 76.69C100.55 78.46 95.5799 80.51 90.6899 82.67C80.4799 87.19 70.5199 92.29 60.4799 97.2C57.6699 98.57 54.7899 99.82 51.9399 101.12C49.0899 102.42 46.0499 103.37 43.0899 104.43L43.9299 104.37L40.5699 104.01L40.9799 105.32C41.5799 103.4 42.4599 101.58 43.7999 100.05C44.3999 99.37 45.0699 98.75 45.7799 98.2C46.9199 97.32 47.9199 96.28 48.9699 95.28C52.8499 91.6 56.8499 88.05 60.9599 84.63C69.5699 77.47 78.5099 70.69 87.3699 63.85C89.2999 62.36 91.4099 61.13 93.1999 59.47C94.8499 57.93 96.2399 56.05 97.1899 54C97.5999 53.12 98.3299 51.94 97.8499 51C97.4099 50.15 96.5099 49.43 95.6399 49.07C94.8599 48.75 93.9599 48.73 93.1299 48.87C92.6199 48.96 92.1199 49.1 91.6399 49.29L91.1399 49.51L91.2699 49.37C90.8199 49.43 90.3599 49.43 89.9099 49.48C87.2699 49.78 84.9299 50.67 82.4399 51.52C79.9499 52.37 77.2699 53.26 74.7099 54.22C69.5099 56.18 64.3799 58.36 59.2499 60.49C53.3699 62.93 47.5299 65.51 41.5999 67.84L33.0399 71.21C30.0499 72.39 26.8699 73.07 23.7599 73.89L24.8999 74L22.7299 72.73L22.9299 73.42C23.0599 72.37 23.2899 71.35 23.6899 70.36C24.0899 69.37 24.7499 68.45 25.2499 67.47C26.2099 65.57 27.3399 63.78 28.6499 62.1C31.5099 58.43 34.7899 55 37.9899 51.62C44.7599 44.49 51.8999 37.78 59.1999 31.19C62.6699 28.05 66.4199 25.04 69.5599 21.56C71.1399 19.81 73.0199 17.96 73.4699 15.59C73.6799 14.5 74.0399 13.63 73.0699 12.83C72.3899 12.27 71.5499 12.01 70.6699 12.1C69.6899 12.19 68.6699 12.53 67.6999 12.73C66.5299 12.97 65.3799 13.28 64.2599 13.69C62.0099 14.53 59.8099 15.61 57.6099 16.58C53.0599 18.59 48.5999 20.8 44.1899 23.1C39.2999 25.65 34.5199 28.4 29.6299 30.95C27.2999 32.17 24.9399 33.37 22.5699 34.51C21.4199 35.06 20.2099 35.49 18.9899 35.83C18.4799 35.97 17.8299 36.25 17.3099 36.23C16.6599 36.21 15.9499 35.74 15.3799 35.48L15.8499 35.95C15.3699 33 17.1699 30.92 18.8099 28.66C20.5999 26.18 22.5799 23.89 24.6699 21.66C26.9299 19.24 29.1199 16.74 31.2199 14.18C33.1499 11.83 35.0899 9.55 36.1299 6.65C36.8099 4.75 37.2699 2.46 35.4599 1.03C34.1999 -0.0300014 32.3999 -0.0900015 30.8399 0.0699985C27.1099 0.449999 23.4899 2.04 20.1399 3.64C13.5899 6.78 7.62991 11.01 1.61991 15.04C0.909911 15.52 -0.290089 16.87 0.0599109 17.83C0.449911 18.88 1.82991 18.05 2.37991 17.68L2.38991 17.69Z"
+                                          fill="black" />
+                              </g>
+                              <defs>
+                                    <clipPath id="clip0_9_525">
+                                          <rect width="170.42" height="190.18" fill="white" />
+                                    </clipPath>
+                              </defs>
+                        </svg>
+
+                        <p class="about-small-text">*I also like <span
+                                    class="about-small-text-emphasize">designing</span>
+                              stuff!</p>
+                  </div>
+
+
+
+
+            </section>
+            <section class="projects-section main-section section" id="projects">
+                  <h2>Projects</h2>
+                  <section class="projects-section__description-field">
+                        <div class="arrow-container">
+                              <div class="arrow"></div>
+                        </div>
+                        <h3>sinecloud</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit tenetur molestiae nostrum
+                              animi. Nisi cum fugit ut earum quod eligendi illum quasi adipisci libero dolore laudantium
+                              delectus eius, cumque necessitatibus.</p>
+                  </section>
+                  <section class="projects_container">
+
+                        <section class="projects_subsection-left projects_subsection">
+                              <ul class="projects_subsection-left-list">
+                                    <li class="projects_subsection-left-listobject"><a href="#"
+                                                data-project="sinecloud"><span class="listobject-span">01
+                                                </span>Sinecloud</a></li>
+                                    <li class="projects_subsection-left-listobject"><a href="#"
+                                                data-project="station"><span class="listobject-span">02 </span>Station
+                                                DAW</a></li>
+
+                                    <li class="projects_subsection-left-listobject"><a href="#"
+                                                data-project="spaceclub"><span class="listobject-span">03 </span>Space
+                                                Club</a></li>
+                                    <li class="projects_subsection-left-listobject"><a href="#"
+                                                data-project="chewstreet"><span class="listobject-span">04
+                                                </span>Chewstreet</a>
+                                    </li>
+                                    <!-- <li class="projects_subsection-left-listobject"><a href="#"
+                                                data-project="milkymood"><span class="listobject-span">05 </span>Milky
+                                                Mood</a></li> -->
+                              </ul>
+                        </section>
+                        <section class="projects_subsection-right projects_subsection">
+                              <div class="projects__project-preview"><a target="_blank"></a></div>
+                              <div class="projects__project-footnotes">
+                                    <h3 class="projects_subtitle"></h3>
+                                    <div class="projects__technologies">
+
+                                    </div>
+                              </div>
+                        </section>
+                  </section>
+            </section>
+            <section class="skills-section main-section section" id="skills">
+                  <section class="skills-section__click-me-field">
+                        <p>well, that sucks :(</p>
+                  </section>
+                  <section class="skills-section__dots-upper-mid">
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                        <div class="dot-upper-mid"></div>
+                  </section>
+                  <div class="skills-section__gameboy-container">
+                        <div class="gameboy__most-outter">
+                              <div class="gameboy__display-outter"></div>
+                              <div class="gameboy__display-inner"></div>
+                              <p class="carloboy">carlo boy</p>
+                              <div class="gameboy__buttons-cross-container">
+                                    <div class="buttons-cross"></div>
+                                    <div class="buttons-cross"></div>
+                                    <div class="buttons-cross"></div>
+                                    <div class="buttons-cross"></div>
+                              </div>
+                              <div class="gameboy__buttons-start-select">
+                                    <div class="button-start button-start-select"></div>
+                                    <div class="button-select button-start-select"></div>
+                              </div>
+                              <div class="gameboy__buttons-ab">
+                                    <button class="button-a button-ab">
+                                          <p>A</p>
+                                    </button>
+                                    <button class="button-b button-ab">
+                                          <p>B</p>
+                                    </button>
+                              </div>
+                              <div class="gameboy__speakers-container">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                              </div>
+                              <div class="gameboy__cross">
+
+                                    <div class="cross-element"></div>
+                                    <div class="cross-element"></div>
+                                    <div class="cross-element"></div>
+                                    <div class="cross-element"></div>
+                                    <div class="cross-element"></div>
+                                    <div class="cross-element"></div>
+                                    <div class="cross-element"></div>
+                                    <div class="cross-element"></div>
+                                    <div class="cross-element"></div>
+
+                              </div>
+                        </div>
+                  </div>
+                  <h2 class="skills-section__title">Skills</h2>
+                  <section class="skills-container__main">
+                        <section class="skills-container__subcontainer subcontainer-left">
+                              <h3>design</h3>
+                              <div class="skills-pair skills-pair-left illustrator">
+                                    <img src="./assets/icons/skills/skills-logos/illustrator.svg" class="skills-svg"
+                                          alt="image for illustrator">
+                                    <div class="skills-level-container" id="illustrator">
+
+                                    </div>
+                              </div>
+                              <div class="skills-pair skills-pair-left photoshop"><img class="skills-svg"
+                                          alt="image for photoshop"
+                                          src="./assets/icons/skills/skills-logos/photoshop.svg">
+                                    <div class="skills-level-container" id="photoshop">
+
+                                    </div>
+                              </div>
+                              <div class="skills-pair skills-pair-left indesign"><img class="skills-svg"
+                                          alt="image for indesign"
+                                          src="./assets/icons/skills/skills-logos/indesign.svg">
+                                    <div class="skills-level-container" id="indesign">
+
+                                    </div>
+                              </div>
+                              <div class="skills-pair skills-pair-left figma"><img class="skills-svg"
+                                          alt="image for figma" src="./assets/icons/skills/skills-logos/figma.svg">
+                                    <div class="skills-level-container" id="figma">
+
+                                    </div>
+                              </div>
+                        </section>
+                        <section class="skills-container__subcontainer subcontainer-right">
+                              <div class="skills-pair skills-pair-right html"><img class="skills-svg"
+                                          alt="image for html" src="./assets/icons/skills/skills-logos/html.svg">
+                                    <div class="skills-level-container" id="html">
+
+                                    </div>
+                              </div>
+                              <div class="skills-pair skills-pair-right css"><img class="skills-svg" alt="image for css"
+                                          src="./assets/icons/skills/skills-logos/css.svg">
+                                    <div class="skills-level-container" id="css">
+
+                                    </div>
+                              </div>
+                              <div class="skills-pair skills-pair-right tailwind"><img class="skills-svg"
+                                          alt="image for tailwind"
+                                          src="./assets/icons/skills/skills-logos/tailwind.svg">
+                                    <div class="skills-level-container" id="tailwind">
+
+                                    </div>
+                              </div>
+                              <div class="skills-pair skills-pair-right javascript"><img class="skills-svg"
+                                          alt="image for javascript"
+                                          src="./assets/icons/skills/skills-logos/javascript.svg">
+                                    <div class="skills-level-container" id="javascript">
+
+                                    </div>
+                              </div>
+                              <div class="skills-pair skills-pair-right react">
+                                    <img class="skills-svg" alt="image for react"
+                                          src="./assets/icons/skills/skills-logos/react.svg">
+                                    <div class="skills-level-container " id="react">
+
+                                    </div>
+                              </div>
+                              <h3 class="programming">tech stacks</h3>
+                        </section>
+                  </section>
+            </section>
+            <section class="contact-section main-section section" id="contact">
+
+                  <h2 class="contact-section__main-title">Contact</h2>
+
+
+                  <section class="contact-section__container">
+                        <section class="contact-section__main-section">
+                              <div class="charlybot_container">
+                                    <section class="contact-section__chatbot-container">
+                                          <section class="chatbot">
+                                                <section class="chatbot__header">
+                                                      <div class="chatbot__logo"><svg width="59" height="74"
+                                                                  viewBox="0 0 59 74" fill="none"
+                                                                  xmlns="http://www.w3.org/2000/svg">
+                                                                  <rect x="2.35559" y="17.7532" width="54.6334"
+                                                                        height="54.6334" stroke="#FAF126"
+                                                                        stroke-width="3" />
+                                                                  <path d="M12.1122 16.2532L12.1122 0.944302"
+                                                                        stroke="#FAF126" stroke-width="3" />
+                                                                  <line x1="42.5806" y1="16.2532" x2="42.5806"
+                                                                        y2="0.944302" stroke="#FAF126"
+                                                                        stroke-width="3" />
+                                                                  <circle cx="17.065" cy="36.0645" r="9.00522"
+                                                                        fill="#FAF126" />
+                                                                  <circle cx="41.3791" cy="36.0645" r="9.00522"
+                                                                        fill="#FAF126" />
+                                                                  <rect x="10.7612" y="53.1746" width="36.9214"
+                                                                        height="9.90574" fill="#FAF126" />
+                                                                  <circle cx="14.3633" cy="35.1641" r="3.60209"
+                                                                        fill="#F46265" />
+                                                                  <circle cx="44.0807" cy="35.1641" r="3.60209"
+                                                                        fill="#F46265" />
+                                                            </svg>
+                                                            <h4>Charlybot</h4>
+                                                      </div>
+                                                      <div class="chatbot__cross contact-cross"></div>
+                                                </section>
+                                                <section class="chatbot__main-field">
+                                                      <section class="chatbot__messages">
+
+                                                            <div class="chatbot_message-container">
+                                                                  <svg width="33" height="42" viewBox="0 0 33 42"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <rect x="1.28894" y="9.91333" width="30.9111"
+                                                                              height="30.9111" stroke="#F9E32C" />
+                                                                        <path d="M7.02148 9.41333L7.02148 0.936941"
+                                                                              stroke="#F9E32C" />
+                                                                        <line x1="24.2222" y1="9.41333" x2="24.2222"
+                                                                              y2="0.936941" stroke="#F9E32C" />
+                                                                        <circle cx="9.76394" cy="20.3828" r="4.98611"
+                                                                              stroke="#F9E32C" />
+                                                                        <circle cx="23.2263" cy="20.3828" r="4.98611"
+                                                                              stroke="#F9E32C" />
+                                                                        <rect x="6.27356" y="29.8564" width="20.4431"
+                                                                              height="5.48472" fill="#F9E32C" />
+                                                                        <circle cx="8.268" cy="19.8843" r="1.99444"
+                                                                              fill="#F9E32C" />
+                                                                        <circle cx="24.7222" cy="19.8843" r="1.99444"
+                                                                              fill="#F9E32C" />
+                                                                  </svg>
+
+                                                                  <p class="chatbot_message">Hello, I'm Charlybot, nice
+                                                                        to meet you! You
+                                                                        can ask your questions either in English or
+                                                                        German (but you're better of with English
+                                                                        probably:)). Have fun!</p>
+                                                            </div>
+                                                      </section>
+                                                      <div class="chatbot__input">
+                                                            <section class="chatbot__input-field">
+                                                                  <textarea maxlength="250"
+                                                                        placeholder="want to know more about me? chat with charlybot to find out about me, my hobbies, flaws and the projects that i've built "></textarea>
+                                                            </section>
+                                                            <section class="chatbot__send-field">
+                                                                  <p id="chatbot__numbers"></p>
+                                                                  <button class="chatbot__send-button">SEND</button>
+                                                            </section>
+                                                      </div>
+                                                </section>
+                                          </section>
+                                    </section>
+                                    <button class="charlybot-button">find out more about me!</button>
+                              </div>
+                              <div class="form_container">
+                                    <form class="contact-section__contact-form" id="contact-form">
+                                          <div class="form_cross contact-cross">
+                                                <!-- ALSO NEED TO ADD THIS TO THE HOVER STATES FOR CUSTOM CURSOR¨!!!!!!!!!!! -->
+                                                <div></div>
+                                          </div>
+                                          <h3>Get in touch with me!</h3>
+                                          <section class="form-options">
+
+                                                <input type="text" placeholder="name" required id="form_name">
+                                                <input type="email" placeholder="email" required id="form_email">
+                                                <select id="form_select" required>
+                                                      <option disabled selected>choose one</option>
+                                                      <option value="joboffer">come work for us!</option>
+                                                      <option value="interviewoffer">we would like to invite you for an
+                                                            interview!
+                                                      </option>
+                                                      <option value="jobrejection">unfortunately, we're looking for
+                                                            someone else...
+                                                      </option>
+                                                      <option value="workoffer">build me a website please!</option>
+                                                </select>
+                                                <textarea placeholder="type here!" required
+                                                      id="form_message"></textarea>
+                                          </section>
+
+                                          <section class="checkbox-send">
+                                                <section>
+                                                      <label for="checkbox">Send me a copy</label>
+                                                      <input type="checkbox" class="send-copy" id="checkbox"
+                                                            name="checkbox" value="copy">
+                                                </section>
+                                                <button type="submit" id="form_send-button">send</button>
+                                          </section>
+                                    </form>
+                                    <button class="contact-button">drop me a line!</button>
+                              </div>
+                        </section>
+                        <footer>
+                              <a href="https://github.com/heckspoiler" target="_blank" id="github"><svg width="101"
+                                          height="104" viewBox="0 0 101 104" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M33.7821 80.7219C33.7821 81.1281 33.3137 81.4531 32.7232 81.4531C32.0512 81.5141 31.5829 81.1891 31.5829 80.7219C31.5829 80.3156 32.0512 79.9906 32.6417 79.9906C33.2526 79.9297 33.7821 80.2547 33.7821 80.7219ZM27.4492 79.8078C27.3067 80.2141 27.7139 80.6812 28.3248 80.8031C28.8542 81.0062 29.4651 80.8031 29.5873 80.3969C29.7095 79.9906 29.3226 79.5234 28.7117 79.3406C28.1823 79.1984 27.5917 79.4016 27.4492 79.8078ZM36.4496 79.4625C35.8591 79.6047 35.4518 79.9906 35.5129 80.4578C35.574 80.8641 36.1034 81.1281 36.7143 80.9859C37.3048 80.8437 37.7121 80.4578 37.651 80.0516C37.5899 79.6656 37.0401 79.4016 36.4496 79.4625ZM49.8484 1.625C21.605 1.625 0 23.0141 0 51.1875C0 73.7141 14.2133 92.9906 34.5151 99.775C37.1216 100.242 38.0379 98.6375 38.0379 97.3172C38.0379 96.0578 37.9768 89.1109 37.9768 84.8453C37.9768 84.8453 23.7228 87.8922 20.7294 78.7922C20.7294 78.7922 18.4081 72.8812 15.0685 71.3578C15.0685 71.3578 10.4054 68.1687 15.3944 68.2297C15.3944 68.2297 20.4647 68.6359 23.2544 73.4703C27.7139 81.3109 35.1871 79.0562 38.099 77.7156C38.5673 74.4656 39.8909 72.2109 41.3571 70.8703C29.9742 69.6109 18.4895 67.9656 18.4895 48.425C18.4895 42.8391 20.0371 40.0359 23.2952 36.4609C22.7657 35.1406 21.0349 29.6969 23.8246 22.6687C28.0804 21.3484 37.875 28.1531 37.875 28.1531C41.9476 27.0156 46.3256 26.4266 50.6629 26.4266C55.0002 26.4266 59.3782 27.0156 63.4508 28.1531C63.4508 28.1531 73.2454 21.3281 77.5012 22.6687C80.2909 29.7172 78.5601 35.1406 78.0306 36.4609C81.2887 40.0562 83.2843 42.8594 83.2843 48.425C83.2843 68.0266 71.2905 69.5906 59.9077 70.8703C61.7811 72.475 63.3694 75.5219 63.3694 80.2953C63.3694 87.1406 63.3083 95.6109 63.3083 97.2766C63.3083 98.5969 64.245 100.202 66.8311 99.7344C87.194 92.9906 101 73.7141 101 51.1875C101 23.0141 78.0917 1.625 49.8484 1.625ZM19.7927 71.6828C19.528 71.8859 19.5891 72.3531 19.9353 72.7391C20.2611 73.0641 20.7294 73.2062 20.9942 72.9422C21.2589 72.7391 21.1978 72.2719 20.8516 71.8859C20.5258 71.5609 20.0575 71.4187 19.7927 71.6828ZM17.5935 70.0375C17.451 70.3016 17.6546 70.6266 18.0619 70.8297C18.3877 71.0328 18.795 70.9719 18.9375 70.6875C19.08 70.4234 18.8764 70.0984 18.4692 69.8953C18.0619 69.7734 17.7361 69.8344 17.5935 70.0375ZM24.1911 77.2687C23.8653 77.5328 23.9875 78.1422 24.4558 78.5281C24.9242 78.9953 25.5147 79.0562 25.7794 78.7312C26.0442 78.4672 25.922 77.8578 25.5147 77.4719C25.0667 77.0047 24.4558 76.9437 24.1911 77.2687ZM21.8698 74.2828C21.544 74.4859 21.544 75.0141 21.8698 75.4812C22.1956 75.9484 22.7454 76.1516 23.0101 75.9484C23.3359 75.6844 23.3359 75.1562 23.0101 74.6891C22.725 74.2219 22.1956 74.0187 21.8698 74.2828Z"
+                                                fill="#FAF126" />
+                                    </svg></a>
+                              <a href="https://www.linkedin.com/in/carlo-ettisberger-1a15a8282/" target="_blank"
+                                    id="linkedin"><svg width="101" height="104" viewBox="0 0 101 104" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M93.7857 6.5H7.19174C3.22388 6.5 0 9.44531 0 13.0609V90.9391C0 94.5547 3.22388 97.5 7.19174 97.5H93.7857C97.7536 97.5 101 94.5547 101 90.9391V13.0609C101 9.44531 97.7536 6.5 93.7857 6.5ZM30.5254 84.5H15.5558V41.0719H30.548V84.5H30.5254ZM23.0406 35.1406C18.2386 35.1406 14.3609 31.6266 14.3609 27.3203C14.3609 23.0141 18.2386 19.5 23.0406 19.5C27.8201 19.5 31.7203 23.0141 31.7203 27.3203C31.7203 31.6469 27.8426 35.1406 23.0406 35.1406ZM86.6391 84.5H71.6694V63.375C71.6694 58.3375 71.5567 51.8578 63.8915 51.8578C56.0911 51.8578 54.8962 57.3422 54.8962 63.0094V84.5H39.9266V41.0719H54.2875V47.0031H54.4904C56.4969 43.5906 61.3891 39.9953 68.671 39.9953C83.821 39.9953 86.6391 48.9937 86.6391 60.6937V84.5Z"
+                                                fill="#FAF126" />
+                                    </svg></a>
+                              <a>
+                                    <h3 class="footer-h3" id="cv">CV</h3>
+                              </a>
+                        </footer>
+                  </section>
+
+            </section>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</body>
+
+</html>

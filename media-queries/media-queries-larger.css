@@ -1,0 +1,480 @@
+@media screen and (min-width: 1000px) {
+
+
+      /* projects */
+      .description-field-inView {
+            left: 61vw;
+      }
+
+      .arrow-container {
+            position: relative;
+            height: 5rem;
+            width: 2.5rem;
+            background-color: #FFEA29;
+            position: absolute;
+            left: 40px;
+            top: 0;
+            margin-left: -40px;
+            border: 1px solid black;
+            margin-top: -1px;
+            z-index: 4;
+            border-right: none;
+            transition: background-color 0.6s ease-in-out left 0.5s ease-in-out;
+      }
+
+
+
+}
+
+@media screen and (min-width: 1400px) {
+
+
+      /* projects */
+      .description-field-inView {
+            left: 74vw;
+      }
+
+      .projects__project-preview img {
+
+            padding: 33.5px 0;
+      }
+
+
+}
+
+
+@media screen and (min-width: 2000px) {
+
+
+      /* projects */
+      .description-field-inView {
+            left: 82vw !important;
+      }
+
+      /* skills */
+
+      /* -------------------- skills section --------------------------- */
+
+
+      /* gameboy */
+
+      .skills-section__gameboy-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 14.5rem;
+            width: 11rem;
+            margin-left: calc(16rem + 46vw);
+            margin-top: 15px;
+            opacity: 0;
+            transform: translateY(-50vh);
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+
+      }
+
+      .gameboy-loaded {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+      }
+
+      .gameboy__most-outter {
+            position: relative;
+            height: 90%;
+            width: 90%;
+            border: 5px solid #FAF126;
+            border-radius: 15px;
+            border-bottom-right-radius: 55px;
+      }
+
+      .gameboy__display-outter {
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 88%;
+            height: 45%;
+            border: 3px solid #FAF126;
+            border-radius: 10px;
+
+      }
+
+      .gameboy__display-inner {
+            position: absolute;
+            top: 11.1%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 78%;
+            height: 38%;
+            border: 3px solid #FAF126;
+            border-radius: 10px;
+
+      }
+
+      .gameboy__buttons-ab {
+            gap: 5px;
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            top: 58%;
+            left: 65%;
+            transform: rotate(63deg);
+      }
+
+      .button-ab {
+            height: 30px;
+            border-radius: 50%;
+            width: 30px;
+            border: 3px solid #FAF126;
+            background-color: transparent;
+            box-shadow: 2px 1px rgba(250, 241, 38, 0.5);
+            transition: background-color 0.1s ease-in, box-shadow 0.1s ease-in;
+      }
+
+      .button-ab p {
+            transform: rotate(-63deg);
+            font-family: Arial, Helvetica, sans-serif;
+            color: #FAF126;
+            font-size: 0.9rem;
+            font-weight: 600;
+      }
+
+      .button-ab:hover {
+            background-color: rgba(38, 215, 250, 0.3);
+
+      }
+
+      .button-ab:active {
+            box-shadow: inset 3px 2px rgba(54, 18, 112, 0.8);
+            background-color: transparent;
+            border: 1px solid #FAF126;
+      }
+
+      .gameboy__buttons-start-select {
+            position: absolute;
+            width: 40%;
+            height: 20px;
+            display: flex;
+            gap: 2px;
+            justify-content: space-evenly;
+            top: 88%;
+            left: 45%;
+            transform: translateX(-50%);
+            align-items: flex-end;
+      }
+
+      .button-start-select {
+            height: 55%;
+            width: 45%;
+            border: 3px solid #FAF126;
+            border-radius: 30px;
+      }
+
+      .gameboy__speakers-container {
+            position: absolute;
+            height: 40px;
+            width: 30px;
+            top: 81%;
+            left: 81.2%;
+            transform: rotate(-45deg);
+            display: flex;
+            justify-content: space-around;
+
+      }
+
+      .gameboy__speakers-container div {
+            height: 60%;
+            width: 17%;
+            border: 2px solid #FAF126;
+            border-radius: 30px;
+      }
+
+      .gameboy__cross {
+            height: 2.2em;
+            width: 2.2em;
+            position: absolute;
+            top: 68%;
+            left: 13%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .cross-element {
+            height: 100%;
+            width: 100%;
+      }
+
+      .cross-element:nth-of-type(2) {
+
+            background-color: #FAF126;
+            opacity: 0.9;
+
+      }
+
+      .cross-element:nth-of-type(4) {
+            background-color: #FAF126;
+            opacity: 0.9;
+      }
+
+      .cross-element:nth-of-type(6) {
+            background-color: #FAF126;
+            opacity: 0.9;
+      }
+
+      .cross-element:nth-of-type(8) {
+            background-color: #FAF126;
+            opacity: 0.9;
+      }
+
+      .cross-element:nth-of-type(5) {
+            background-color: #FAF126;
+            opacity: 0.9;
+      }
+
+      .carloboy {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #FAF126;
+            font-style: italic;
+            font-size: 0.7rem;
+            position: absolute;
+            text-transform: uppercase;
+            top: 55%;
+            left: 28.5%;
+            font-weight: bolder;
+            letter-spacing: -1px;
+      }
+
+      /* .carloboy::before {
+      content: "";
+      background-image: 
+} */
+
+
+
+      #skills {
+            transition: opacity 0.2s ease-in-out;
+            position: relative;
+      }
+
+      .skills-section__click-me-field {
+
+            top: calc(2vw + 8rem);
+      }
+
+      .skills-section__click-me-field p {
+            font-family: "Nohemi Semibold";
+            color: #faf126;
+            font-size: calc(0.5vw + 1rem);
+            display: flex;
+            justify-items: flex-start;
+      }
+
+      .power-text {
+            font-size: 0.4em;
+            margin-top: 10px;
+
+      }
+
+      .skills-section h2 {
+            font-family: "Nohemi Semibold";
+            font-size: calc(2rem + 6vw);
+            margin-top: 10px;
+            color: #FAF126;
+            margin-left: -10vw;
+            opacity: 0;
+            transition: margin-left 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+
+
+
+      .skills-container__main {
+            height: 82%;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            gap: 8vw;
+            pointer-events: none;
+
+
+      }
+
+      .skills-container__subcontainer {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            gap: 3vw;
+      }
+
+      .skills-pair {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 2vw;
+            transform: translateX(-15%);
+            opacity: 0;
+            transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.25s cubic-bezier(0.165, 0.84, 0.44, 1), width 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+      }
+
+      .skills-pair-loaded {
+            transform: translateX(0) !important;
+            opacity: 1 !important;
+      }
+
+      .skills-svg {
+            scale: 0.6;
+
+      }
+
+      .skills-level-container {
+            position: relative;
+            width: 1.8vw;
+            height: calc(14rem + 7vw);
+            border: 1px solid #FAF126;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+      }
+
+
+
+      .cube {
+            height: 10%;
+            width: 100%;
+            background-color: yellow;
+            position: absolute;
+            left: 50px;
+      }
+
+      .cube-test {
+            height: 40px;
+            width: 40px;
+            background-color: #faf126;
+            position: absolute;
+            transition: opacity 0.7s cubic-bezier(0.23, 1, 0.320, 1), left 2s cubic-bezier(0.445, 0.05, 0.55, 0.95), top 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .tailwind {
+            padding-bottom: 1.6rem;
+      }
+
+      .skills-container__subcontainer h3 {
+            writing-mode: vertical-rl;
+            text-orientation: sideways;
+            white-space: nowrap;
+            color: #FAF126;
+            margin-top: 18vw;
+            font-size: calc(0.5vw + 0.8rem);
+            letter-spacing: 2px;
+            opacity: 0;
+            transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+
+      .subtitles-loaded {
+            opacity: 1 !important;
+      }
+
+      .programming {
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            white-space: nowrap;
+            transform: rotate(180deg);
+            margin-top: 0;
+            margin-bottom: 18vw;
+      }
+
+      .skills-section__dots-upper-mid {
+            height: 8vw;
+            width: 10vw;
+            position: absolute;
+            left: calc(4rem + 23vw);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            top: 20px;
+
+      }
+
+      .dot-upper-mid {
+            height: 1vw;
+            width: 1vw;
+            border-radius: 50%;
+      }
+
+
+
+      .dot-upper-mid:nth-of-type(2) {
+            background-color: #faf126
+      }
+
+      .dot-upper-mid:nth-of-type(3) {
+            background-color: #faf126
+      }
+
+      .dot-upper-mid:nth-of-type(4) {
+            background-color: #faf126
+      }
+
+
+      .dot-upper-mid:nth-of-type(12) {
+            background-color: #faf126
+      }
+
+      .dot-upper-mid:nth-of-type(13) {
+            background-color: #faf126
+      }
+
+      .dot-upper-mid:nth-of-type(14) {
+            background-color: #faf126
+      }
+
+
+      .dot-upper-mid:nth-of-type(23) {
+            background-color: #faf126
+      }
+
+      .dot-upper-mid:nth-of-type(24) {
+            background-color: #faf126
+      }
+
+      .dot-upper-mid:nth-of-type(22) {
+            background-color: #faf126
+      }
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 1300px) {
+
+
+      /* projects */
+      .description-field-inView {
+            left: 72vw;
+      }
+
+      .arrow-container {
+            position: relative;
+            height: 5rem;
+            width: 2.5rem;
+            background-color: #FFEA29;
+            position: absolute;
+            left: 40px;
+            top: 0;
+            margin-left: -40px;
+            border: 1px solid black;
+            margin-top: -0.7px;
+            z-index: 4;
+            border-right: none;
+            transition: background-color 0.6s ease-in-out left 0.5s ease-in-out;
+      }
+
+}
