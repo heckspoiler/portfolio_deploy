@@ -4,23 +4,25 @@
 
 require("dotenv").config();
 const express = require("express");
+const path = require("path");
 const cors = require("cors");
 const axios = require("axios");
 const nodemailer = require("nodemailer");
 const app = express();
 const port = 3000;
 const prompt = require("./prompt");
-const apiKey = process.env.API_KEY;
-const email = process.env.MAIL;
-const password = process.env.MAIL_PW;
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(express.static(path.join(__dirname, "public")));
 
+app.use(cors());
 app.use(express.json());
-console.log(prompt);
 
 //define transporter for mail sending with nodemailer
+
+const email = process.env.MAIL;
+const apiKey = process.env.API_KEY;
+const password = process.env.MAIL_PW;
 
 let transporter = nodemailer.createTransport({
   service: "outlook",
@@ -175,6 +177,5 @@ Your email:
 // });
 
 app.listen(PORT, () => {
-  console.log(`Server running at port ${PORT}`);
-  console.log("everything is working fine just like it should be");
+  console.log(`Server running on port ${PORT}`);
 });
