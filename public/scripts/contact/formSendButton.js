@@ -21,7 +21,7 @@ form.addEventListener("submit", (event) => {
     checkbox: formCheckbox.checked,
   };
 
-  fetch(`https://carlothedom.digital/api/form`, {
+  fetch(`https://www.carlothedom.digital/api/form`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
