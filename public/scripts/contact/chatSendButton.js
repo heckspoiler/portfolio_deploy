@@ -2,6 +2,10 @@ const sendButton = document.querySelector(".chatbot__send-button");
 const chatContainer = document.querySelector(".chatbot__messages");
 const chatInput = document.querySelector(".chatbot__input-field textarea");
 const textfieldCount = document.getElementById("chatbot__numbers");
+const API_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://your-vercel-app-name.vercel.app/api/ask"
+    : "http://localhost:3000/api/ask";
 
 // defining enter as send option too
 
@@ -15,7 +19,7 @@ chatInput.addEventListener("keydown", function (event) {
 // sending user input to the chatbot and fetching answer
 
 const askQuestion = (question) => {
-  fetch(`http://localhost:3000/ask?q=${question}`)
+  fetch(`${API_URL}?q=${question}`)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
