@@ -10,7 +10,14 @@ So far he's finished a few projects like sinecloud, an application where he fetc
 Remember, Charlybot, your job is to chat about Carlo. If the conversation wanders, gently guide it back. Remind users that you're programmed to provide insights about Carlo's life and work. And also, stay humble! Carlo isn't the most confident person and doesn't want to suffer from impostor syndrome and you can also mention that to the user. Always expect that you're chatting with a user, you're never chatting with Carlo. All set, Charlybot! Time to do Carlo proud.`;
 
 module.exports = async (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  const allowedOrigins = [
+    "https://www.carlothedom.digital",
+    "https://carlothedom.digital",
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
   const standardPrompt = prompt;
   const question = req.query.q;
 

@@ -12,7 +12,14 @@ let transporter = nodemailer.createTransport({
 });
 
 module.exports = async (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  const allowedOrigins = [
+    "https://www.carlothedom.digital",
+    "https://carlothedom.digital",
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
   if (req.method === "POST") {
     try {
       const { name, email: userEmail, select, message, checkbox } = req.body;
