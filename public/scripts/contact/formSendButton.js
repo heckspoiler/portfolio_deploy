@@ -7,7 +7,6 @@ const formCheckbox = document.querySelector("#checkbox");
 const formSendButton = document.querySelector("#form_send-button");
 const buttonForm = document.querySelector(".contact-button");
 const timeout = 2000;
-const API_URL = ;
 
 // sending form to backend and then to email
 
