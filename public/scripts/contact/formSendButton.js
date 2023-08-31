@@ -51,6 +51,6 @@ formSendButton.addEventListener("click", () => {
     buttonForm.innerHTML = "sent!";
   }, timeout);
   setTimeout(() => {
-    button.innerHTML = "thanks for reaching out!";
+    buttonForm.innerHTML = "thanks for reaching out!";
   }, timeout * 2);
 });
