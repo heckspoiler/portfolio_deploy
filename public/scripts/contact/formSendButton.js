@@ -44,11 +44,10 @@ formSendButton.addEventListener("click", () => {
   form.classList.remove("form-visible");
   buttonForm.innerHTML = "<h3>licking the stamp...</h3>";
   buttonForm.classList.remove("button-resize");
-  formName.innerHTML = "";
-  formEmail.innerHTML = "";
-  // formSelect.innerHTML = "";
-  formMessage.innerHTML = "";
-  setTimeout(() => {}, timeout);
+
+  setTimeout(() => {
+    buttonForm.innerHTML = "Sent!";
+  }, timeout);
   setTimeout(() => {
     buttonForm.innerHTML = "thanks for reaching out!";
   }, timeout * 2);
