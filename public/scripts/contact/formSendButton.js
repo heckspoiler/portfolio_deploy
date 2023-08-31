@@ -7,10 +7,7 @@ const formCheckbox = document.querySelector("#checkbox");
 const formSendButton = document.querySelector("#form_send-button");
 const buttonForm = document.querySelector(".contact-button");
 const timeout = 2000;
-const API_URL =
-  process.env.NODE_ENV === "production"
-    ? "https://your-vercel-app-name.vercel.app/api/form"
-    : "http://localhost:3000/api/form";
+const API_URL = ;
 
 // sending form to backend and then to email
 
@@ -25,7 +22,7 @@ form.addEventListener("submit", (event) => {
     checkbox: formCheckbox.checked,
   };
 
-  fetch(`${API_URL}`, {
+  fetch(`portfolio-deploy-gatbft6h6-heckspoiler.vercel.app/api/form`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -1,5 +1,5 @@
 const axios = require("axios");
-const prompt = require("../prompt");
+const prompt = require("./prompt");
 
 const apiKey = process.env.API_KEY;
 
