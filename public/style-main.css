@@ -39,29 +39,7 @@ input:hover {
       .about-h2-green {
             font-family: "Nohemi Semibold", Arial, sans-serif;
             -webkit-text-stroke: 1px transparent !important;
-            color: rgb(66, 218, 135) !important;
-
-
-            /* }
-
-
-      .projects__project-preview img {
-            scale: 0.81;
-            height: 100%;
-            object-fit: cover;
-            width: 100%;
-      }
-
-
-      .project-video {
-            position: absolute;
-            scale: 0.9;
-            height: calc(10rem + 25vw);
-            width: 90%;
-            opacity: 0;
-            transition: opacity 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
-        
-      } */
+            color: rgb(61, 235, 139) !important;
 
       }
 }
