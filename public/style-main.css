@@ -386,11 +386,11 @@ body::-webkit-scrollbar {
 
 @keyframes text-animation {
       0% {
-            margin-top: 32px;
+            margin-top: 64px;
       }
 
       33% {
-            margin-top: 32px;
+            margin-top: 64px;
       }
 
       33% {
