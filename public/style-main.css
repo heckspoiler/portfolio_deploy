@@ -375,6 +375,10 @@ body::-webkit-scrollbar {
       width: 100%;
 }
 
+.first div {
+      padding-top: 20px;
+}
+
 .animation div:first-child {
       animation: text-animation 4s;
 }
