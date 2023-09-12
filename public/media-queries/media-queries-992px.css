@@ -160,6 +160,7 @@
             height: 15px !important;
             width: 15px !important;
             color: black;
+            border: 1px solid red;
       }
 
       .hover-svg-laptop--active {
