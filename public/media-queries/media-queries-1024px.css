@@ -39,6 +39,14 @@
             gap: 1vw;
       }
 
+      .about-h2-outlines {
+
+            font-family: "Nohemi Semibold", Arial, sans-serif;
+            -webkit-text-stroke: 1px black;
+            color: #A4FFDE;
+
+      }
+
 
 
 
@@ -444,8 +452,8 @@
       }
 
       .projects-github {
-            height: 15%;
-            width: 15%;
+            height: 15px;
+            width: 15px;
             color: black;
       }
 
