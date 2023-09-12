@@ -43,7 +43,7 @@
 
             font-family: "Nohemi Semibold", Arial, sans-serif;
             -webkit-text-stroke: 1px black;
-            color: #A4FFDE;
+            color: #A4FFDE !important;
 
       }
 
