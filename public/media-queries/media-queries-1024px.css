@@ -44,7 +44,6 @@
             font-family: "Nohemi Semibold", Arial, sans-serif;
             -webkit-text-stroke: 1px black;
             color: #A4FFDE !important;
-
       }
 
 
@@ -452,8 +451,8 @@
       }
 
       .projects-github {
-            height: 15px;
-            width: 15px;
+            height: 15px !important;
+            width: 15px !important;
             color: black;
       }
 
