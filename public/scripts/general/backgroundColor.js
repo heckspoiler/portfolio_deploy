@@ -2,7 +2,7 @@ const body = document.querySelector('body');
 const sections = document.querySelectorAll('.main-section');
 const eyes = document.querySelectorAll('.eyes');
 const cursor = document.querySelector('.cursor');
-const cursorText = document.querySelector('.cursor-text');
+const cursorText = document.querySelector('.cursor-text p');
 
 // Check if the entry is intersecting and if it is, change background color
 

@@ -1,5 +1,5 @@
 const cursor = document.querySelector('.cursor');
-const cursorText = document.querySelector('.cursor-text');
+const cursorText = document.querySelector('.cursor-text p');
 
 //changing cursor position & heart color on hover
 

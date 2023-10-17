@@ -56,7 +56,7 @@ input:hover {
       pointer-events: none;
 }
 
-.cursor-text {
+.cursor-text p {
       opacity: 0;
       transition: opacity 0.2s ease-in-out, left 0.2s ease-in-out;
       font-family: "Nohemi Semibold", Arial, sans-serif;
