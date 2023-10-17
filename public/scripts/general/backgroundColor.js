@@ -11,24 +11,25 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const sectionId = entry.target.id;
+        console.log('Intersection triggered for ' + sectionId);
         if (sectionId == 'about') {
           body.style.backgroundColor = '#A4FFDE';
           cursor.style.backgroundColor = '#31ABFD';
-          cursorText.style.color = '#31ABFD !important';
+          cursorText.style.color = '#31ABFD';
         } else if (sectionId == 'projects') {
           body.style.background = '#FFEA29';
           cursor.style.backgroundColor = '#FC1616';
-          cursorText.style.color = '#FC1616 !important';
+          cursorText.style.color = '#FC1616';
         } else if (sectionId == 'landing') {
           body.style.backgroundColor = '#A4FFDE';
         } else if (sectionId == 'skills') {
           body.style.backgroundColor = '#711EF8';
           cursor.style.backgroundColor = '#FAF126';
-          cursorText.style.color = '#FAF126 !important';
+          cursorText.style.color = '#FAF126';
         } else if (sectionId == 'contact') {
           body.style.backgroundColor = '#F46265';
           cursor.style.backgroundColor = '#31ABFD';
-          cursorText.style.color = '#31ABFD !important';
+          cursorText.style.color = '#31ABFD';
         }
       }
     });
