@@ -18,12 +18,14 @@ const moveCursor = (e) => {
 const growCursor = () => {
   cursor.style.width = '22px';
   cursor.style.height = '22px';
+  cursor.style.blur = '2px';
 };
 
 const resetCursor = () => {
   cursor.style.width = '10px';
   cursor.style.height = '10px';
   cursor.style.borderRadius = '50%';
+  cursor.style.blur = '0px';
 };
 
 const imagesAndLinks = document.querySelectorAll(
