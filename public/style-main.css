@@ -66,7 +66,7 @@ input:hover {
       transition: opacity 0.3s ease-in-out, margin-left 0.3s ease-in-out;
       font-family: "Nohemi Semibold", Arial, sans-serif;
       font-size: 1rem;
-      text-shadow: 1px 1px 1px black;
+      text-shadow: 0.5px 0.5px 0.5px black;
 
 }
 
