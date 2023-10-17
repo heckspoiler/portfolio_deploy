@@ -25,7 +25,6 @@ const resetCursor = () => {
   cursor.style.width = '10px';
   cursor.style.height = '10px';
   cursor.style.borderRadius = '50%';
-  cursor.style.blur = '0px';
 };
 
 const imagesAndLinks = document.querySelectorAll(
@@ -34,12 +33,12 @@ const imagesAndLinks = document.querySelectorAll(
 
 const showText = () => {
   cursorText.style.opacity = 1;
-  cursorText.style.left = '8vw !important';
+  cursorText.style.marginLeft = '8vw';
 };
 
 const hideText = () => {
   cursorText.style.opacity = 0;
-  cursorText.style.left = '0vw !important';
+  cursorText.style.marginLeft = '0vw';
 };
 
 imagesAndLinks.forEach((element) => {
