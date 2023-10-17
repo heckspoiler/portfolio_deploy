@@ -1,4 +1,5 @@
-const cursor = document.querySelector(".cursor");
+const cursor = document.querySelector('.cursor');
+const cursorText = document.querySelector('.cursor-text');
 
 //changing cursor position & heart color on hover
 
@@ -15,38 +16,46 @@ const moveCursor = (e) => {
 //changing cursor size and shape by element hovered
 
 const growCursor = () => {
-  cursor.style.width = "22px";
-  cursor.style.height = "22px";
+  cursor.style.width = '22px';
+  cursor.style.height = '22px';
 };
 
 const resetCursor = () => {
-  cursor.style.width = "10px";
-  cursor.style.height = "10px";
-  cursor.style.borderRadius = "50%";
+  cursor.style.width = '10px';
+  cursor.style.height = '10px';
+  cursor.style.borderRadius = '50%';
 };
 
 const imagesAndLinks = document.querySelectorAll(
-  "img, a, button, .projects-github, .contact-cross, .arrow-container"
+  'img, a, button, .projects-github, .contact-cross, .arrow-container'
 );
 
+const showText = () => {
+  cursorText.style.opacity = 1;
+};
+
+const hideText = () => {
+  cursorText.style.opacity = 0;
+};
+
 imagesAndLinks.forEach((element) => {
-  element.addEventListener("mouseenter", growCursor);
-  element.addEventListener("mouseleave", resetCursor);
+  element.addEventListener('mouseenter', growCursor);
+  element.addEventListener('mouseleave', resetCursor);
 });
 
-const textfieldsAndInputs = document.querySelectorAll("input, textarea");
+const textfieldsAndInputs = document.querySelectorAll('input, textarea');
 
 const changeCursor = () => {
-  cursor.style.width = "2px";
-  cursor.style.height = "22px";
-  cursor.style.borderRadius = "0";
+  cursor.style.width = '2px';
+  cursor.style.height = '22px';
+  cursor.style.borderRadius = '0';
 };
 
 textfieldsAndInputs.forEach((element) => {
-  element.addEventListener("mouseenter", changeCursor);
-  element.addEventListener("mouseleave", resetCursor);
+  element.addEventListener('mouseenter', changeCursor);
+  element.addEventListener('mouseleave', resetCursor);
 });
 
-window.addEventListener("mousemove", moveCursor);
+window.addEventListener('mousemove', moveCursor);
 
 console.log(window.innerHeight, window.innerWidth);

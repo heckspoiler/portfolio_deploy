@@ -56,6 +56,11 @@ input:hover {
       pointer-events: none;
 }
 
+.cursor-text {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+}
+
 .hovered {
       position: absolute;
       height: 20px;
@@ -266,153 +271,7 @@ body::-webkit-scrollbar {
 
 /* section 1 styling  (landing section) */
 
-/* .landing-section {
-      position: absolute;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      height: 100vh;
-      z-index: 8;
-      top: 0;
-      left: 0;
-      transition: background-color 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
-
-}
-
-
-.landing-button {
-      font-family: "Nohemi Medium", Arial, sans-serif;
-      position: absolute;
-      font-size: calc(1rem + 4vw);
-      padding: calc(0.3rem + 3vw);
-      outline: none;
-      border: 3px solid transparent;
-      box-shadow: 0px 0px 0px transparent;
-      left: 10rem;
-      background-color: transparent;
-      color: transparent;
-      display: none;
-      z-index: 10;
-
-}
-
-.landing-button:hover {
-      background-color: #F46265 !important;
-}
-
-.landing-button:active {
-      box-shadow: 0px 0px 0px black I !important;
-}
-
-
-.magnet-block {
-      height: calc(0.2rem + 0.8vw);
-      border: 2px solid black;
-      box-shadow: 2px 2px 1px black;
-      width: 150vw;
-      background-color: #FAF126;
-      position: absolute;
-      top: calc(20rem + 20vh);
-      left: 100vw;
-}
-
-.landing-section__animation-text-one {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      left: -64vw;
-      top: calc(20rem + 20vh);
-      text-shadow: 2px 2px 1px black;
-      font-size: 0rem;
-      rotate: 24deg;
-      height: 4rem;
-      width: 100vw;
-      font-family: "Nohemi Semibold", Arial, sans-serif;
-}
-
-.click-me-h2 {
-      margin-top: calc(6rem + 10vw) !important;
-      margin-left: 10rem;
-      width: 50rem;
-      border: 3px solid black;
-      padding: 30px;
-      transition: border 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
-
-}
-
-.click-me-h2 h2 {
-      color: black;
-      font-family: "Nohemi Semibold", Arial, sans-serif;
-      text-shadow: 0px 0px 0px white;
-      font-size: 6rem;
-      transition: color 1s cubic-bezier(0.455, 0.03, 0.515, 0.955), text-shadow 1s cubic-bezier(0.455, 0.03, 0.515, 0.955), font-size 1s cubic-bezier(0.455, 0.03, 0.515, 0.955), scale 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-}
-
-
-.animation {
-      height: 64px;
-      font-family: "Nohemi Semibold", Arial, sans-serif;
-      overflow: hidden;
-      margin-left: 1rem;
-      max-width: 50rem;
-      width: auto;
-}
-
-.first div,
-.second div {
-      height: 64px;
-      display: inline-block;
-      max-width: 50rem;
-      width: 100%;
-}
-
-.first div {
-      padding-top: 9px;
-}
-
-.animation div:first-child {
-      animation: text-animation 4s;
-}
-
-
-
-
-
-
-@keyframes text-animation {
-      0% {
-            margin-top: 64px;
-      }
-
-      33% {
-            margin-top: 64px;
-      }
-
-      33% {
-            margin-top: -64px;
-      }
-
-      66% {
-            margin-top: -64px;
-      }
-
-      66% {
-            margin-top: -64px;
-      }
-
-      100% {
-            margin-top: 0px;
-
-      }
-}
-
-.no-scroll {
-      overflow: hidden;
-} */
 
 /* About Section Styling */
 
