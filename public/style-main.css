@@ -58,11 +58,11 @@ input:hover {
 
 .cursor-text {
       opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 1s ease-in-out;
       font-family: "Nohemi Semibold", Arial, sans-serif;
-      margin-left: 3vw;
-      font-size: 1.2rem;
-      color: black;
+      margin-left: 4vw;
+      font-size: 1rem;
+      color: blue;
       mix-blend-mode: difference;
 }
 
