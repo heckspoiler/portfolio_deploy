@@ -1,6 +1,5 @@
 const cursor = document.querySelector('.cursor');
 const cursorText = document.querySelector('.cursor-text p');
-const cursorBlob = document.querySelectorAll('.blob');
 
 //changing cursor position & heart color on hover
 
@@ -13,24 +12,6 @@ const moveCursor = (e) => {
 
   cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 };
-
-let currentX = 0;
-let currentY = 0;
-let aimX = 0;
-let aimY = 0;
-let speed = 0.1;
-
-const animate = function () {
-  currentX += (aimX - currentX) * speed;
-  currentY += (aimY - currentY) * speed;
-
-  cursorBlob.style.left = currentX + 'px';
-  cursorBlob.style.top = currentY + 'px';
-
-  requestAnimationFrame(animate);
-};
-
-animate();
 
 //changing cursor size and shape by element hovered
 
