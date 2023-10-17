@@ -63,7 +63,7 @@ input:hover {
 .cursor-text p {
       position: absolute;
       opacity: 0;
-      transition: opacity 0.2s ease-in-out, margin-left 0.2s ease-in-out;
+      transition: opacity 0.3s ease-in-out, margin-left 0.3s ease-in-out;
       font-family: "Nohemi Semibold", Arial, sans-serif;
       font-size: 1rem;
       text-shadow: 1px 1px 1px black;
