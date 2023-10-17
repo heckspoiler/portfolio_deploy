@@ -59,6 +59,8 @@ input:hover {
 .cursor-text {
       position: relative;
       width: 8vw;
+      height: 4vh;
+      border: 1px solid red;
 }
 
 .cursor-text p {
@@ -70,6 +72,7 @@ input:hover {
       text-shadow: 0.5px 0.5px 0.5px black;
       width: 100%;
       border: 1px solid black;
+      height: 100%;
 
 }
 
