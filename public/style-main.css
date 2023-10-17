@@ -266,7 +266,7 @@ body::-webkit-scrollbar {
 
 /* section 1 styling  (landing section) */
 
-.landing-section {
+/* .landing-section {
       position: absolute;
       background-color: white;
       display: flex;
@@ -282,11 +282,6 @@ body::-webkit-scrollbar {
 
 }
 
-.landing-sections {
-      position: relative;
-      height: 100vh;
-      width: 100vw;
-}
 
 .landing-button {
       font-family: "Nohemi Medium", Arial, sans-serif;
@@ -417,13 +412,13 @@ body::-webkit-scrollbar {
 
 .no-scroll {
       overflow: hidden;
-}
+} */
 
 /* About Section Styling */
 
 .about-section {
       padding: 0 4rem 2rem 4rem;
-      transform: translateY(-100vh);
+      /* transform: translateY(-100vh); */
 
 }
 
