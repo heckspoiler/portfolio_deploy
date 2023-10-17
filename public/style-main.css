@@ -58,6 +58,7 @@ input:hover {
 
 .cursor-text {
       position: relative;
+      width: 8vw;
 }
 
 .cursor-text p {
@@ -65,7 +66,7 @@ input:hover {
       opacity: 0;
       transition: opacity 0.3s ease-in-out, margin-left 0.3s ease-in-out;
       font-family: "Nohemi Semibold", Arial, sans-serif;
-      font-size: 1rem;
+      font-size: calc(0.4rem + 0.4vw);
       text-shadow: 0.5px 0.5px 0.5px black;
 
 }
