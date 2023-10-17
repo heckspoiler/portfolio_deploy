@@ -14,21 +14,21 @@ const observer = new IntersectionObserver(
         if (sectionId == 'about') {
           body.style.backgroundColor = '#A4FFDE';
           cursor.style.backgroundColor = '#31ABFD';
-          cursorText.style.backgroundColor = '#31ABFD !important';
+          cursorText.style.color = '#31ABFD !important';
         } else if (sectionId == 'projects') {
           body.style.background = '#FFEA29';
           cursor.style.backgroundColor = '#FC1616';
-          cursorText.style.backgroundColor = '#FC1616 !important';
+          cursorText.style.color = '#FC1616 !important';
         } else if (sectionId == 'landing') {
           body.style.backgroundColor = '#A4FFDE';
         } else if (sectionId == 'skills') {
           body.style.backgroundColor = '#711EF8';
           cursor.style.backgroundColor = '#FAF126';
-          cursorText.style.backgroundColor = '#FAF126 !important';
+          cursorText.style.color = '#FAF126 !important';
         } else if (sectionId == 'contact') {
           body.style.backgroundColor = '#F46265';
           cursor.style.backgroundColor = '#31ABFD';
-          cursorText.style.backgroundColor = '#31ABFD !important';
+          cursorText.style.color = '#31ABFD !important';
         }
       }
     });
