@@ -68,6 +68,8 @@ input:hover {
       font-family: "Nohemi Semibold", Arial, sans-serif;
       font-size: calc(0.4rem + 0.4vw);
       text-shadow: 0.5px 0.5px 0.5px black;
+      width: 100%;
+      border: 1px solid black;
 
 }
 
