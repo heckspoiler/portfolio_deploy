@@ -34,12 +34,12 @@ const imagesAndLinks = document.querySelectorAll(
 
 const showText = () => {
   cursorText.style.opacity = 1;
-  cursorText.style.marginLeft = '8vw !important';
+  cursorText.style.left = '8vw !important';
 };
 
 const hideText = () => {
   cursorText.style.opacity = 0;
-  cursorText.style.marginLeft = '0vw !important';
+  cursorText.style.left = '0vw !important';
 };
 
 imagesAndLinks.forEach((element) => {
