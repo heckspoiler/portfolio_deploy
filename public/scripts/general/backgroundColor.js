@@ -1,7 +1,8 @@
-const body = document.querySelector("body");
-const sections = document.querySelectorAll(".main-section");
-const eyes = document.querySelectorAll(".eyes");
-const cursor = document.querySelector(".cursor");
+const body = document.querySelector('body');
+const sections = document.querySelectorAll('.main-section');
+const eyes = document.querySelectorAll('.eyes');
+const cursor = document.querySelector('.cursor');
+const cursorText = document.querySelector('.cursor-text');
 
 // Check if the entry is intersecting and if it is, change background color
 
@@ -10,20 +11,24 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const sectionId = entry.target.id;
-        if (sectionId == "about") {
-          body.style.backgroundColor = "#A4FFDE";
-          cursor.style.backgroundColor = "#31ABFD";
-        } else if (sectionId == "projects") {
-          body.style.background = "#FFEA29";
-          cursor.style.backgroundColor = "#FC1616";
-        } else if (sectionId == "landing") {
-          body.style.backgroundColor = "#A4FFDE";
-        } else if (sectionId == "skills") {
-          body.style.backgroundColor = "#711EF8";
-          cursor.style.backgroundColor = "#FAF126";
-        } else if (sectionId == "contact") {
-          body.style.backgroundColor = "#F46265";
-          cursor.style.backgroundColor = "#31ABFD";
+        if (sectionId == 'about') {
+          body.style.backgroundColor = '#A4FFDE';
+          cursor.style.backgroundColor = '#31ABFD';
+          cursorText.style.backgroundColor = '#31ABFD';
+        } else if (sectionId == 'projects') {
+          body.style.background = '#FFEA29';
+          cursor.style.backgroundColor = '#FC1616';
+          cursorText.style.backgroundColor = '#FC1616';
+        } else if (sectionId == 'landing') {
+          body.style.backgroundColor = '#A4FFDE';
+        } else if (sectionId == 'skills') {
+          body.style.backgroundColor = '#711EF8';
+          cursor.style.backgroundColor = '#FAF126';
+          cursorText.style.backgroundColor = '#FAF126';
+        } else if (sectionId == 'contact') {
+          body.style.backgroundColor = '#F46265';
+          cursor.style.backgroundColor = '#31ABFD';
+          cursorText.style.backgroundColor = '#31ABFD';
         }
       }
     });
