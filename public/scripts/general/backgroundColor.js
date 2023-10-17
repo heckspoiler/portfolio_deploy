@@ -11,7 +11,6 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const sectionId = entry.target.id;
-        console.log('Intersection triggered for ' + sectionId);
         if (sectionId == 'about') {
           body.style.backgroundColor = '#A4FFDE';
           cursor.style.backgroundColor = '#31ABFD';

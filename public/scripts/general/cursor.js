@@ -62,5 +62,3 @@ textfieldsAndInputs.forEach((element) => {
 });
 
 window.addEventListener('mousemove', moveCursor);
-
-console.log(window.innerHeight, window.innerWidth);

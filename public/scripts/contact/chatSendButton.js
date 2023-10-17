@@ -1,11 +1,11 @@
-const sendButton = document.querySelector(".chatbot__send-button");
-const chatContainer = document.querySelector(".chatbot__messages");
-const chatInput = document.querySelector(".chatbot__input-field textarea");
-const textfieldCount = document.getElementById("chatbot__numbers");
+const sendButton = document.querySelector('.chatbot__send-button');
+const chatContainer = document.querySelector('.chatbot__messages');
+const chatInput = document.querySelector('.chatbot__input-field textarea');
+const textfieldCount = document.getElementById('chatbot__numbers');
 // defining enter as send option too
 
-chatInput.addEventListener("keydown", function (event) {
-  if (event.key == "Enter" && !event.shiftKey) {
+chatInput.addEventListener('keydown', function (event) {
+  if (event.key == 'Enter' && !event.shiftKey) {
     event.preventDefault();
     sendButton.click();
   }
@@ -15,11 +15,10 @@ chatInput.addEventListener("keydown", function (event) {
 
 const askQuestion = (question) => {
   fetch(`https://www.carlothedom.digital/api/ask?q=${question}`, {
-    mode: "cors", // Add this line
+    mode: 'cors', // Add this line
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       displayAnswer(data);
     })
     .catch((error) => console.log(error));
@@ -28,8 +27,8 @@ const askQuestion = (question) => {
 //displaying answer of chatbot in the chat field
 
 function displayAnswer(answer) {
-  let chatAnswer = document.createElement("div");
-  chatAnswer.classList.add("chatbot_message-container");
+  let chatAnswer = document.createElement('div');
+  chatAnswer.classList.add('chatbot_message-container');
   chatAnswer.innerHTML = `<svg width="33" height="42" viewBox="0 0 33 42"
   fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect x="1.28894" y="9.91333" width="30.9111"
@@ -59,25 +58,25 @@ let firstClick = 0;
 
 // adding user input to the UI/chat field & changing the placeholder based on how many messages have been sent
 
-sendButton.addEventListener("click", () => {
+sendButton.addEventListener('click', () => {
   if (chatInput.value) {
-    let textMessage = document.createElement("div");
-    textMessage.classList.add("user_message-container");
+    let textMessage = document.createElement('div');
+    textMessage.classList.add('user_message-container');
     textMessage.innerHTML = `<h5>You</h5> <p class="user_message">${chatInput.value}</p>`;
     chatContainer.appendChild(textMessage);
     chatContainer.scrollTop = chatContainer.scrollHeight;
 
     askQuestion(chatInput.value);
 
-    chatInput.value = "";
-    textfieldCount.innerHTML = "0/250";
+    chatInput.value = '';
+    textfieldCount.innerHTML = '0/250';
     firstClick += 1;
   } else {
-    alert("Please, write something.");
+    alert('Please, write something.');
   }
 
   if (firstClick > 0) {
-    chatInput.placeholder = "keep on asking...";
+    chatInput.placeholder = 'keep on asking...';
   }
   if (firstClick > 4) {
     chatInput.placeholder = "there's a lot more to know about me!";
