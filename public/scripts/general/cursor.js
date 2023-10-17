@@ -43,6 +43,8 @@ const hideText = () => {
 imagesAndLinks.forEach((element) => {
   element.addEventListener('mouseenter', growCursor);
   element.addEventListener('mouseleave', resetCursor);
+  element.addEventListener('mouseenter', showText);
+  element.addEventListener('mouseleave', hideText);
 });
 
 const textfieldsAndInputs = document.querySelectorAll('input, textarea');
