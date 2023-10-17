@@ -33,7 +33,7 @@ const imagesAndLinks = document.querySelectorAll(
 
 const showText = () => {
   cursorText.style.opacity = 1;
-  cursorText.style.marginLeft = '8vw';
+  cursorText.style.marginLeft = '4vw';
 };
 
 const hideText = () => {
